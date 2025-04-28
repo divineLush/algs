@@ -1,3 +1,4 @@
+// best/average case O(nlogn), worst case O(n^2)
 // not stable, in-place
 const quicksort1 = (arr, low = 0, high = arr.length - 1) => {
   if (low >= high) {
@@ -21,6 +22,7 @@ const quicksort1 = (arr, low = 0, high = arr.length - 1) => {
 
   return arr
 }
+
 console.log(quicksort1([1, 4, 2, 3, 6, 8, 7, 3, 1]))
 
 // stable, not in-place

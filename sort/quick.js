@@ -1,5 +1,8 @@
 // best/average case O(nlogn), worst case O(n^2)
-// not stable, in-place
+// space complexity depends on recursion depth
+// worst case space complexity is O(n), average/best case O(nlogn)
+// space complexity can be reduced to O(logn) even in the worst case
+// not stable, in-place implementation
 const quicksort1 = (arr, low = 0, high = arr.length - 1) => {
   if (low >= high) {
     return arr
@@ -25,7 +28,7 @@ const quicksort1 = (arr, low = 0, high = arr.length - 1) => {
 
 console.log(quicksort1([1, 4, 2, 3, 6, 8, 7, 3, 1]))
 
-// stable, not in-place
+// stable, not in-place implementation
 // random pivot
 const quicksort2 = (arr) => {
   if (!Array.isArray(arr) || !arr.length) {

@@ -7,6 +7,8 @@ const graph = {
   'F': []
 }
 
+// O(|V| + |E|) time
+// O(|V|) space
 const bfs = (graph, startNode) => {
   const visited = new Set()
   const queue = [startNode]

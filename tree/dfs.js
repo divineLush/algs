@@ -7,6 +7,8 @@ const graph = {
   'F': []
 }
 
+// O(|V| + |E|) time
+// O(|V|) space
 const dfs = (node, visited = new Set()) => {
   if (!node || visited.has(node)) {
     return
